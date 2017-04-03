@@ -1,0 +1,859 @@
+
+What a response should look like
+response = {
+  "language": "en",
+  "keywords": [
+    {
+      "text": "long time",
+      "sentiment": {
+        "score": -0.537232
+      },
+      "relevance": 0.962446,
+      "emotion": {
+        "sadness": 0.50358,
+        "joy": 0.011955,
+        "fear": 0.407215,
+        "disgust": 0.107808,
+        "anger": 0.072012
+      }
+    },
+    {
+      "text": "Donald Trump",
+      "sentiment": {
+        "score": 0.408247
+      },
+      "relevance": 0.917912,
+      "emotion": {
+        "sadness": 0.074394,
+        "joy": 0.026433,
+        "fear": 0.068234,
+        "disgust": 0.848663,
+        "anger": 0.048462
+      }
+    },
+    {
+      "text": "constitutional democracy",
+      "sentiment": {
+        "score": 0.373746
+      },
+      "relevance": 0.873523,
+      "emotion": {
+        "sadness": 0.15653,
+        "joy": 0.180042,
+        "fear": 0.046056,
+        "disgust": 0.343456,
+        "anger": 0.300731
+      }
+    },
+    {
+      "text": "peaceful transfer",
+      "sentiment": {
+        "score": 0.373746
+      },
+      "relevance": 0.856082,
+      "emotion": {
+        "sadness": 0.15653,
+        "joy": 0.180042,
+        "fear": 0.046056,
+        "disgust": 0.343456,
+        "anger": 0.300731
+      }
+    },
+    {
+      "text": "open mind",
+      "sentiment": {
+        "score": 0.203476
+      },
+      "relevance": 0.853,
+      "emotion": {
+        "sadness": 0.448409,
+        "joy": 0.151977,
+        "fear": 0.176378,
+        "disgust": 0.087613,
+        "anger": 0.07781
+      }
+    }
+  ],
+  "entities": [
+    {
+      "type": "Location",
+      "text": "America",
+      "sentiment": {
+        "score": 0.354547
+      },
+      "relevance": 0.850701,
+      "emotion": {
+        "sadness": 0.226036,
+        "joy": 0.524565,
+        "fear": 0.078805,
+        "disgust": 0.196303,
+        "anger": 0.15276
+      },
+      "count": 14
+    },
+    {
+      "type": "Person",
+      "text": "Donald Trump",
+      "sentiment": {
+        "score": 0.305861
+      },
+      "relevance": 0.457048,
+      "emotion": {
+        "sadness": 0.149939,
+        "joy": 0.051631,
+        "fear": 0.096073,
+        "disgust": 0.725429,
+        "anger": 0.044648
+      },
+      "disambiguation": {
+        "subtype": [
+          "AwardNominee",
+          "AwardWinner",
+          "Celebrity",
+          "CompanyFounder",
+          "TVPersonality",
+          "TVProducer",
+          "FilmActor",
+          "TVActor"
+        ],
+        "name": "Donald Trump",
+        "dbpedia_resource": "http://dbpedia.org/resource/Donald_Trump"
+      },
+      "count": 2
+    },
+    {
+      "type": "JobTitle",
+      "text": "president",
+      "sentiment": {
+        "score": 0.408247
+      },
+      "relevance": 0.257826,
+      "emotion": {
+        "sadness": 0.074394,
+        "joy": 0.026433,
+        "fear": 0.068234,
+        "disgust": 0.848663,
+        "anger": 0.048462
+      },
+      "count": 1
+    }
+  ]
+}
+
+
+
+specified response
+Trump:
+{
+  "emotion": {
+    "targets": [
+      {
+        "text": "feminism",
+        "emotion": {
+          "sadness": 0.031539,
+          "joy": 0.443282,
+          "fear": 0.064056,
+          "disgust": 0.249154,
+          "anger": 0.127833
+        }
+      },
+      {
+        "text": "Black Lives Matter",
+        "emotion": {
+          "sadness": 0.031539,
+          "joy": 0.443282,
+          "fear": 0.064056,
+          "disgust": 0.249154,
+          "anger": 0.127833
+        }
+      }
+    ],
+    "document": {
+      "emotion": {
+        "sadness": 0.527245,
+        "joy": 0.61279,
+        "fear": 0.107558,
+        "disgust": 0.144798,
+        "anger": 0.119499
+      }
+    }
+  },
+  "language": "en"
+}
+Clinton:
+{
+  "emotion": {
+    "targets": [
+      {
+        "text": "feminism",
+        "emotion": {
+          "sadness": 0.074604,
+          "joy": 0.099966,
+          "fear": 0.177954,
+          "disgust": 0.538032,
+          "anger": 0.202898
+        }
+      },
+      {
+        "text": "Black Lives Matter",
+        "emotion": {
+          "sadness": 0.074604,
+          "joy": 0.099966,
+          "fear": 0.177954,
+          "disgust": 0.538032,
+          "anger": 0.202898
+        }
+      }
+    ],
+    "document": {
+      "emotion": {
+        "sadness": 0.229907,
+        "joy": 0.188479,
+        "fear": 0.165992,
+        "disgust": 0.584681,
+        "anger": 0.125927
+      }
+    }
+  },
+  "language": "en"
+}
+
+
+another respn:
+{
+  "keywords": [
+    {
+      "text": "LGBT people",
+      "sentiment": {
+        "score": -0.776075
+      },
+      "relevance": 0.940161,
+      "emotion": {
+        "sadness": 0.21116,
+        "joy": 0.003961,
+        "fear": 0.603625,
+        "disgust": 0.25718,
+        "anger": 0.082212
+      }
+    },
+    {
+      "text": "gay men",
+      "sentiment": {
+        "score": -0.560297
+      },
+      "relevance": 0.870924,
+      "emotion": {
+        "sadness": 0.320244,
+        "joy": 0.005256,
+        "fear": 0.115774,
+        "disgust": 0.533659,
+        "anger": 0.217253
+      }
+    },
+    {
+      "text": "tumblr post",
+      "sentiment": {
+        "score": 0.400947
+      },
+      "relevance": 0.771339,
+      "emotion": {
+        "sadness": 0.272668,
+        "joy": 0.127934,
+        "fear": 0.114133,
+        "disgust": 0.236427,
+        "anger": 0.287554
+      }
+    },
+    {
+      "text": "secret homophobic sides",
+      "sentiment": {
+        "score": -0.883334
+      },
+      "relevance": 0.737349,
+      "emotion": {
+        "sadness": 0.250192,
+        "joy": 0.251704,
+        "fear": 0.086906,
+        "disgust": 0.29237,
+        "anger": 0.044692
+      }
+    },
+    {
+      "text": "Sam Smith",
+      "sentiment": {
+        "score": -0.545339
+      },
+      "relevance": 0.730569,
+      "emotion": {
+        "sadness": 0.596839,
+        "joy": 0.080323,
+        "fear": 0.021173,
+        "disgust": 0.155066,
+        "anger": 0.157481
+      }
+    }
+  ],
+  "entities": [
+    {
+      "type": "Company",
+      "text": "Tumblr",
+      "sentiment": {
+        "score": -0.900716
+      },
+      "relevance": 0.86979,
+      "emotion": {
+        "sadness": 0.359843,
+        "joy": 0.001179,
+        "fear": 0.174106,
+        "disgust": 0.391665,
+        "anger": 0.285384
+      },
+      "disambiguation": {
+        "subtype": [],
+        "name": "Tumblr",
+        "dbpedia_resource": "http://dbpedia.org/resource/Tumblr"
+      },
+      "count": 3
+    },
+    {
+      "type": "Person",
+      "text": "Sam Smith",
+      "sentiment": {
+        "score": -0.545339
+      },
+      "relevance": 0.781673,
+      "emotion": {
+        "sadness": 0.596839,
+        "joy": 0.080323,
+        "fear": 0.021173,
+        "disgust": 0.155066,
+        "anger": 0.157481
+      },
+      "count": 3
+    },
+    {
+      "type": "Award",
+      "text": "Oscar",
+      "sentiment": {
+        "score": -0.0100759
+      },
+      "relevance": 0.737625,
+      "emotion": {
+        "sadness": 0.154734,
+        "joy": 0.285587,
+        "fear": 0.010773,
+        "disgust": 0.428588,
+        "anger": 0.037366
+      },
+      "count": 3
+    },
+    {
+      "type": "Person",
+      "text": "Adam Lambert",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.696799,
+      "emotion": {
+        "sadness": 0.296257,
+        "joy": 0.190356,
+        "fear": 0.16167,
+        "disgust": 0.1362,
+        "anger": 0.172384
+      },
+      "disambiguation": {
+        "subtype": [
+          "MusicalArtist",
+          "Celebrity",
+          "TVPersonality",
+          "TheaterActor",
+          "TVActor"
+        ],
+        "name": "Adam Lambert",
+        "dbpedia_resource": "http://dbpedia.org/resource/Adam_Lambert"
+      },
+      "count": 2
+    }
+  ],
+  "language": "en"
+}
+
+and another
+{
+  "keywords": [
+    {
+      "text": "llamas",
+      "sentiment": {
+        "score": 0.213902
+      },
+      "relevance": 0.922688,
+      "emotion": {
+        "sadness": 0.30323,
+        "joy": 0.149671,
+        "fear": 0.485856,
+        "disgust": 0.467046,
+        "anger": 0.130635
+      }
+    },
+    {
+      "text": "scaly llamas",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.752425,
+      "emotion": {
+        "sadness": 0.052522,
+        "joy": 0.153396,
+        "fear": 0.596454,
+        "disgust": 0.077751,
+        "anger": 0.079469
+      }
+    },
+    {
+      "text": "bad-ass llamas",
+      "sentiment": {
+        "score": -0.287958
+      },
+      "relevance": 0.710781,
+      "emotion": {
+        "sadness": 0.351404,
+        "joy": 0.005451,
+        "fear": 0.183668,
+        "disgust": 0.539383,
+        "anger": 0.089299
+      }
+    },
+    {
+      "text": "poor doomed baby",
+      "sentiment": {
+        "score": -0.726613
+      },
+      "relevance": 0.683622,
+      "emotion": {
+        "sadness": 0.398907,
+        "joy": 0.001806,
+        "fear": 0.440971,
+        "disgust": 0.172037,
+        "anger": 0.146814
+      }
+    },
+    {
+      "text": "fine scales",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.49551,
+      "emotion": {
+        "sadness": 0.303309,
+        "joy": 0.251832,
+        "fear": 0.117687,
+        "disgust": 0.153711,
+        "anger": 0.087924
+      }
+    }
+  ],
+  "entities": [],
+  "language": "en"
+}
+
+
+{
+  "keywords": [
+    {
+      "text": "women",
+      "sentiment": {
+        "score": 0.19357
+      },
+      "relevance": 0.941445,
+      "emotion": {
+        "sadness": 0.317572,
+        "joy": 0.052904,
+        "fear": 0.100924,
+        "disgust": 0.65934,
+        "anger": 0.135518
+      }
+    },
+    {
+      "text": "women resistance fighters",
+      "sentiment": {
+        "score": -0.295902
+      },
+      "relevance": 0.818331,
+      "emotion": {
+        "sadness": 0.417178,
+        "joy": 0.017746,
+        "fear": 0.128063,
+        "disgust": 0.37368,
+        "anger": 0.230905
+      }
+    },
+    {
+      "text": "single female pilot",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.728482,
+      "emotion": {
+        "sadness": 0.576936,
+        "joy": 0.072377,
+        "fear": 0.094382,
+        "disgust": 0.228308,
+        "anger": 0.055461
+      }
+    },
+    {
+      "text": "Great Men theory",
+      "sentiment": {
+        "score": 0.64431
+      },
+      "relevance": 0.727727,
+      "emotion": {
+        "sadness": 0.112304,
+        "joy": 0.445251,
+        "fear": 0.118775,
+        "disgust": 0.141792,
+        "anger": 0.057793
+      }
+    },
+    {
+      "text": "Alaska bush pilots",
+      "sentiment": {
+        "score": -0.589297
+      },
+      "relevance": 0.72213,
+      "emotion": {
+        "sadness": 0.390116,
+        "joy": 0.180499,
+        "fear": 0.043425,
+        "disgust": 0.219724,
+        "anger": 0.11889
+      }
+    }
+  ],
+  "entities": [
+    {
+      "type": "Location",
+      "text": "Alaska",
+      "sentiment": {
+        "score": -0.550171
+      },
+      "relevance": 0.754202,
+      "emotion": {
+        "sadness": 0.412548,
+        "joy": 0.130332,
+        "fear": 0.059956,
+        "disgust": 0.27813,
+        "anger": 0.118105
+      },
+      "disambiguation": {
+        "subtype": [
+          "PoliticalDistrict",
+          "AdministrativeDivision",
+          "GovernmentalJurisdiction",
+          "USState",
+          "StateOrCounty"
+        ],
+        "name": "Alaska",
+        "dbpedia_resource": "http://dbpedia.org/resource/Alaska"
+      },
+      "count": 2
+    },
+    {
+      "type": "Person",
+      "text": "Shaka Zulu",
+      "sentiment": {
+        "score": 0.44101
+      },
+      "relevance": 0.675153,
+      "emotion": {
+        "sadness": 0.499794,
+        "joy": 0.006891,
+        "fear": 0.181299,
+        "disgust": 0.345376,
+        "anger": 0.129695
+      },
+      "disambiguation": {
+        "subtype": [],
+        "name": "Shaka",
+        "dbpedia_resource": "http://dbpedia.org/resource/Shaka"
+      },
+      "count": 1
+    },
+    {
+      "type": "Organization",
+      "text": "Great Men",
+      "sentiment": {
+        "score": 0.475207
+      },
+      "relevance": 0.628677,
+      "emotion": {
+        "sadness": 0.07168,
+        "joy": 0.529963,
+        "fear": 0.063621,
+        "disgust": 0.187754,
+        "anger": 0.027074
+      },
+      "count": 1
+    },
+    {
+      "type": "Organization",
+      "text": "ANC",
+      "sentiment": {
+        "score": -0.604084
+      },
+      "relevance": 0.60869,
+      "emotion": {
+        "sadness": 0,
+        "joy": 0,
+        "fear": 0,
+        "disgust": 0,
+        "anger": 0
+      },
+      "disambiguation": {
+        "subtype": [],
+        "name": "All News Channel",
+        "dbpedia_resource": "http://dbpedia.org/resource/All_News_Channel"
+      },
+      "count": 1
+    },
+    {
+      "type": "Location",
+      "text": "Durban",
+      "sentiment": {
+        "score": -0.489509
+      },
+      "relevance": 0.573853,
+      "emotion": {
+        "sadness": 0.51041,
+        "joy": 0.070105,
+        "fear": 0.132228,
+        "disgust": 0.172106,
+        "anger": 0.170416
+      },
+      "disambiguation": {
+        "subtype": [
+          "City"
+        ],
+        "name": "Durban",
+        "dbpedia_resource": "http://dbpedia.org/resource/Durban"
+      },
+      "count": 1
+    }
+  ],
+  "language": "en"
+}
+
+{
+  "keywords": [
+    {
+      "text": "women",
+      "sentiment": {
+        "score": -0.43679
+      },
+      "relevance": 0.976663,
+      "emotion": {
+        "sadness": 0.562424,
+        "joy": 0.047658,
+        "fear": 0.063044,
+        "disgust": 0.715377,
+        "anger": 0.083521
+      }
+    },
+    {
+      "text": "Lady Teenage Coders",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.783561,
+      "emotion": {
+        "sadness": 0.181763,
+        "joy": 0.217718,
+        "fear": 0.098259,
+        "disgust": 0.381824,
+        "anger": 0.088087
+      }
+    },
+    {
+      "text": "American Women Novelists.",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.776839
+    },
+    {
+      "text": "soldiers",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.602269,
+      "emotion": {
+        "sadness": 0.654554,
+        "joy": 0.039342,
+        "fear": 0.074486,
+        "disgust": 0.131115,
+        "anger": 0.172949
+      }
+    },
+    {
+      "text": "horrifying ways",
+      "sentiment": {
+        "score": 0.720084
+      },
+      "relevance": 0.597485,
+      "emotion": {
+        "sadness": 0.298592,
+        "joy": 0.160614,
+        "fear": 0.15725,
+        "disgust": 0.201423,
+        "anger": 0.166102
+      }
+    }
+  ],
+  "entities": [
+    {
+      "type": "GeographicFeature",
+      "text": "Foz Meadows",
+      "sentiment": {
+        "score": 0.465362
+      },
+      "relevance": 0.728379,
+      "emotion": {
+        "sadness": 0.275348,
+        "joy": 0.379463,
+        "fear": 0.126476,
+        "disgust": 0.001708,
+        "anger": 0.045758
+      },
+      "count": 1
+    },
+    {
+      "type": "Location",
+      "text": "Greece",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.643982,
+      "emotion": {
+        "sadness": 0.359166,
+        "joy": 0.121348,
+        "fear": 0.316752,
+        "disgust": 0.091065,
+        "anger": 0.108154
+      },
+      "count": 1
+    },
+    {
+      "type": "Quantity",
+      "text": "fifteen year",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.643982,
+      "count": 1
+    }
+  ],
+  "language": "en"
+}
+
+
+{
+  "keywords": [
+    {
+      "text": "James Tiptree Jr.",
+      "sentiment": {
+        "score": 0.422384
+      },
+      "relevance": 0.921065,
+      "emotion": {
+        "sadness": 0.212201,
+        "joy": 0.402196,
+        "fear": 0.06552,
+        "disgust": 0.062116,
+        "anger": 0.122729
+      }
+    },
+    {
+      "text": "story",
+      "sentiment": {
+        "score": 0.422384
+      },
+      "relevance": 0.754791,
+      "emotion": {
+        "sadness": 0.278257,
+        "joy": 0.253085,
+        "fear": 0.047451,
+        "disgust": 0.528287,
+        "anger": 0.092564
+      }
+    },
+    {
+      "text": "difficult time",
+      "sentiment": {
+        "score": -0.518777
+      },
+      "relevance": 0.638291,
+      "emotion": {
+        "sadness": 0.582569,
+        "joy": 0.002435,
+        "fear": 0.046897,
+        "disgust": 0.336683,
+        "anger": 0.195453
+      }
+    },
+    {
+      "text": "Women Men",
+      "sentiment": {
+        "score": 0
+      },
+      "relevance": 0.617927,
+      "emotion": {
+        "sadness": 0.150077,
+        "joy": 0.126238,
+        "fear": 0.027954,
+        "disgust": 0.650265,
+        "anger": 0.046268
+      }
+    },
+    {
+      "text": "interesting story",
+      "sentiment": {
+        "score": 0.422384
+      },
+      "relevance": 0.563451,
+      "emotion": {
+        "sadness": 0.212201,
+        "joy": 0.402196,
+        "fear": 0.06552,
+        "disgust": 0.062116,
+        "anger": 0.122729
+      }
+    }
+  ],
+  "entities": [
+    {
+      "type": "Person",
+      "text": "James Tiptree Jr.",
+      "sentiment": {
+        "score": 0.422384
+      },
+      "relevance": 0.917021,
+      "emotion": {
+        "sadness": 0.212201,
+        "joy": 0.402196,
+        "fear": 0.06552,
+        "disgust": 0.062116,
+        "anger": 0.122729
+      },
+      "disambiguation": {
+        "subtype": [
+          "AwardNominee",
+          "AwardWinner"
+        ],
+        "name": "James Tiptree, Jr.",
+        "dbpedia_resource": "http://dbpedia.org/resource/James_Tiptree,_Jr."
+      },
+      "count": 1
+    }
+  ],
+  "language": "en"
+}
