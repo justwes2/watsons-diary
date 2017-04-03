@@ -857,3 +857,21 @@ and another
   ],
   "language": "en"
 }
+
+
+color for 
+#paper {
+  background-color: rgb(255, 255, 246);
+}
+#line {
+  background-color: rgb(207, 199, 188);
+}
+#olive {
+  background-color: rgb(178, 178, 154);
+}
+#lav {
+  background-color: rgb(157, 136, 178);
+}
+#tan {
+  background-color: rgb(215, 180, 131);
+}

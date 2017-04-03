@@ -1,144 +1,144 @@
 console.log('Im Alive!');
 
-// const response = {
-//   "language": "en",
-//   "keywords": [
-//     {
-//       "text": "long time",
-//       "sentiment": {
-//         "score": -0.537232
-//       },
-//       "relevance": 0.962446,
-//       "emotion": {
-//         "sadness": 0.50358,
-//         "joy": 0.011955,
-//         "fear": 0.407215,
-//         "disgust": 0.107808,
-//         "anger": 0.072012
-//       }
-//     },
-//     {
-//       "text": "Donald Trump",
-//       "sentiment": {
-//         "score": 0.408247
-//       },
-//       "relevance": 0.917912,
-//       "emotion": {
-//         "sadness": 0.074394,
-//         "joy": 0.026433,
-//         "fear": 0.068234,
-//         "disgust": 0.848663,
-//         "anger": 0.048462
-//       }
-//     },
-//     {
-//       "text": "constitutional democracy",
-//       "sentiment": {
-//         "score": 0.373746
-//       },
-//       "relevance": 0.873523,
-//       "emotion": {
-//         "sadness": 0.15653,
-//         "joy": 0.180042,
-//         "fear": 0.046056,
-//         "disgust": 0.343456,
-//         "anger": 0.300731
-//       }
-//     },
-//     {
-//       "text": "peaceful transfer",
-//       "sentiment": {
-//         "score": 0.373746
-//       },
-//       "relevance": 0.856082,
-//       "emotion": {
-//         "sadness": 0.15653,
-//         "joy": 0.180042,
-//         "fear": 0.046056,
-//         "disgust": 0.343456,
-//         "anger": 0.300731
-//       }
-//     },
-//     {
-//       "text": "open mind",
-//       "sentiment": {
-//         "score": 0.203476
-//       },
-//       "relevance": 0.853,
-//       "emotion": {
-//         "sadness": 0.448409,
-//         "joy": 0.151977,
-//         "fear": 0.176378,
-//         "disgust": 0.087613,
-//         "anger": 0.07781
-//       }
-//     }
-//   ],
-//   "entities": [
-//     {
-//       "type": "Location",
-//       "text": "America",
-//       "sentiment": {
-//         "score": 0.354547
-//       },
-//       "relevance": 0.850701,
-//       "emotion": {
-//         "sadness": 0.226036,
-//         "joy": 0.524565,
-//         "fear": 0.078805,
-//         "disgust": 0.196303,
-//         "anger": 0.15276
-//       },
-//       "count": 14
-//     },
-//     {
-//       "type": "Person",
-//       "text": "Donald Trump",
-//       "sentiment": {
-//         "score": 0.305861
-//       },
-//       "relevance": 0.457048,
-//       "emotion": {
-//         "sadness": 0.149939,
-//         "joy": 0.051631,
-//         "fear": 0.096073,
-//         "disgust": 0.725429,
-//         "anger": 0.044648
-//       },
-//       "disambiguation": {
-//         "subtype": [
-//           "AwardNominee",
-//           "AwardWinner",
-//           "Celebrity",
-//           "CompanyFounder",
-//           "TVPersonality",
-//           "TVProducer",
-//           "FilmActor",
-//           "TVActor"
-//         ],
-//         "name": "Donald Trump",
-//         "dbpedia_resource": "http://dbpedia.org/resource/Donald_Trump"
-//       },
-//       "count": 2
-//     },
-//     {
-//       "type": "JobTitle",
-//       "text": "president",
-//       "sentiment": {
-//         "score": 0.408247
-//       },
-//       "relevance": 0.257826,
-//       "emotion": {
-//         "sadness": 0.074394,
-//         "joy": 0.026433,
-//         "fear": 0.068234,
-//         "disgust": 0.848663,
-//         "anger": 0.048462
-//       },
-//       "count": 1
-//     }
-//   ]
-// }
+const response = {
+  "language": "en",
+  "keywords": [
+    {
+      "text": "long time",
+      "sentiment": {
+        "score": -0.537232
+      },
+      "relevance": 0.962446,
+      "emotion": {
+        "sadness": 0.50358,
+        "joy": 0.011955,
+        "fear": 0.407215,
+        "disgust": 0.107808,
+        "anger": 0.072012
+      }
+    },
+    {
+      "text": "Donald Trump",
+      "sentiment": {
+        "score": 0.408247
+      },
+      "relevance": 0.917912,
+      "emotion": {
+        "sadness": 0.074394,
+        "joy": 0.026433,
+        "fear": 0.068234,
+        "disgust": 0.848663,
+        "anger": 0.048462
+      }
+    },
+    {
+      "text": "constitutional democracy",
+      "sentiment": {
+        "score": 0.373746
+      },
+      "relevance": 0.873523,
+      "emotion": {
+        "sadness": 0.15653,
+        "joy": 0.180042,
+        "fear": 0.046056,
+        "disgust": 0.343456,
+        "anger": 0.300731
+      }
+    },
+    {
+      "text": "peaceful transfer",
+      "sentiment": {
+        "score": 0.373746
+      },
+      "relevance": 0.856082,
+      "emotion": {
+        "sadness": 0.15653,
+        "joy": 0.180042,
+        "fear": 0.046056,
+        "disgust": 0.343456,
+        "anger": 0.300731
+      }
+    },
+    {
+      "text": "open mind",
+      "sentiment": {
+        "score": 0.203476
+      },
+      "relevance": 0.853,
+      "emotion": {
+        "sadness": 0.448409,
+        "joy": 0.151977,
+        "fear": 0.176378,
+        "disgust": 0.087613,
+        "anger": 0.07781
+      }
+    }
+  ],
+  "entities": [
+    {
+      "type": "Location",
+      "text": "America",
+      "sentiment": {
+        "score": 0.354547
+      },
+      "relevance": 0.850701,
+      "emotion": {
+        "sadness": 0.226036,
+        "joy": 0.524565,
+        "fear": 0.078805,
+        "disgust": 0.196303,
+        "anger": 0.15276
+      },
+      "count": 14
+    },
+    {
+      "type": "Person",
+      "text": "Donald Trump",
+      "sentiment": {
+        "score": 0.305861
+      },
+      "relevance": 0.457048,
+      "emotion": {
+        "sadness": 0.149939,
+        "joy": 0.051631,
+        "fear": 0.096073,
+        "disgust": 0.725429,
+        "anger": 0.044648
+      },
+      "disambiguation": {
+        "subtype": [
+          "AwardNominee",
+          "AwardWinner",
+          "Celebrity",
+          "CompanyFounder",
+          "TVPersonality",
+          "TVProducer",
+          "FilmActor",
+          "TVActor"
+        ],
+        "name": "Donald Trump",
+        "dbpedia_resource": "http://dbpedia.org/resource/Donald_Trump"
+      },
+      "count": 2
+    },
+    {
+      "type": "JobTitle",
+      "text": "president",
+      "sentiment": {
+        "score": 0.408247
+      },
+      "relevance": 0.257826,
+      "emotion": {
+        "sadness": 0.074394,
+        "joy": 0.026433,
+        "fear": 0.068234,
+        "disgust": 0.848663,
+        "anger": 0.048462
+      },
+      "count": 1
+    }
+  ]
+}
 
 function makeTable(data) {
     let table = $('#emotionResults')
@@ -182,3 +182,4 @@ function vanillaTable(data) {
   }
 }
 // vanillaTable(response)
+makeTable(response)
