@@ -184,50 +184,50 @@ function vanillaTable(data) {
 // vanillaTable(response)
 // makeTable(response)
 
-const backgroundColor = [
-    'rgba(255, 99, 132, 0.2)',
-    'rgba(54, 162, 235, 0.2)',
-    'rgba(255, 206, 86, 0.2)',
-    'rgba(75, 192, 192, 0.2)',
-    'rgba(153, 102, 255, 0.2)',
-    'rgba(255, 159, 64, 0.2)'
-]
-const borderColor = [
-    'rgba(255,99,132,1)',
-    'rgba(54, 162, 235, 1)',
-    'rgba(255, 206, 86, 1)',
-    'rgba(75, 192, 192, 1)',
-    'rgba(153, 102, 255, 1)',
-    'rgba(255, 159, 64, 1)'
-]
-const chartData = {
-    labels: ["Sadness", "Joy", "Fear", "Disgust", "Anger"],
-    datasets: []
-}
-for (let i=0; i<response.keywords.length; i++){
-  let newData = {}
-  newData.label=response.keywords[i].text
-  newData.data=[response.keywords[i].emotion.sadness, response.keywords[i].emotion.joy, response.keywords[i].emotion.fear, response.keywords[i].emotion.disgust, response.keywords[i].emotion.anger]
-  newData.backgroundColor=backgroundColor[i]
-  newData.borderColor=borderColor[i]
-  newData.borderWidth=1
-  chartData.datasets.push(newData)
-}
+// const backgroundColor = [
+//     'rgba(255, 99, 132, 0.2)',
+//     'rgba(54, 162, 235, 0.2)',
+//     'rgba(255, 206, 86, 0.2)',
+//     'rgba(75, 192, 192, 0.2)',
+//     'rgba(153, 102, 255, 0.2)',
+//     'rgba(255, 159, 64, 0.2)'
+// ]
+// const borderColor = [
+//     'rgba(255,99,132,1)',
+//     'rgba(54, 162, 235, 1)',
+//     'rgba(255, 206, 86, 1)',
+//     'rgba(75, 192, 192, 1)',
+//     'rgba(153, 102, 255, 1)',
+//     'rgba(255, 159, 64, 1)'
+// ]
+// const chartData = {
+//     labels: ["Sadness", "Joy", "Fear", "Disgust", "Anger"],
+//     datasets: []
+// }
+// for (let i=0; i<response.keywords.length; i++){
+//   let newData = {}
+//   newData.label=response.keywords[i].text
+//   newData.data=[response.keywords[i].emotion.sadness, response.keywords[i].emotion.joy, response.keywords[i].emotion.fear, response.keywords[i].emotion.disgust, response.keywords[i].emotion.anger]
+//   newData.backgroundColor=backgroundColor[i]
+//   newData.borderColor=borderColor[i]
+//   newData.borderWidth=1
+//   chartData.datasets.push(newData)
+// }
 
-var ctx = $("#myChart");
-let myChart = new Chart(ctx, {
-  type: 'radar',
-    data: chartData,
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
-    }
-})
+// var ctx = $("#myChart");
+// let myChart = new Chart(ctx, {
+//   type: 'radar',
+//     data: chartData,
+//     options: {
+//         scales: {
+//             yAxes: [{
+//                 ticks: {
+//                     beginAtZero:true
+//                 }
+//             }]
+//         }
+//     }
+// })
 
 // Any of the following formats may be used
 // var ctx = document.getElementById("myChart");
