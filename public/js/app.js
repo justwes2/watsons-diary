@@ -45,7 +45,7 @@ function IndexControllerFunction(WatsonFactory){
           }
         }
       })
-
+    this.hideForm = true
     })
     }
 

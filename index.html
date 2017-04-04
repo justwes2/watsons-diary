@@ -8,10 +8,10 @@
   </head>
   <body data-ng-controller="IndexController as vm">
     <header>
-      <h1 >Watson's Diary</h1>
+      <h1>Watson's Diary</h1>
       <h3>Welcome to Watson's Diary, the intelligent journaling app. This app analyzes journal entries to provide feedback powered by IBM's Watson Natural Language Understanding.  </h3>
     </header>
-    <form ng-submit="vm.sendToWatson()">
+    <form id="textForm" ng-submit="vm.sendToWatson()" ng-hide="vm.hideForm">
       <h3>Enter text here</h3>
       <textarea  rows="8" cols="80" ng-model="vm.sampleText"></textarea><br>
       <button>submit</button>
