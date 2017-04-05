@@ -23,13 +23,15 @@ function IndexControllerFunction(WatsonFactory){
       console.log(response);
       makeTable(response)
       for (let i=0; i<metrics.keywords.length; i++){
-        let newData = {}
-        newData.label=metrics.keywords[i].text
-        newData.data=[metrics.keywords[i].emotion.sadness, metrics.keywords[i].emotion.joy, metrics.keywords[i].emotion.fear, metrics.keywords[i].emotion.disgust, metrics.keywords[i].emotion.anger]
-        newData.backgroundColor=backgroundColor[i]
-        newData.borderColor=borderColor[i]
-        newData.borderWidth=1
-        chartData.datasets.push(newData)
+        if (data.keywords[i].emotion) {
+          let newData = {}
+          newData.label=metrics.keywords[i].text
+          newData.data=[metrics.keywords[i].emotion.sadness, metrics.keywords[i].emotion.joy, metrics.keywords[i].emotion.fear, metrics.keywords[i].emotion.disgust, metrics.keywords[i].emotion.anger]
+          newData.backgroundColor=backgroundColor[i]
+          newData.borderColor=borderColor[i]
+          newData.borderWidth=1
+          chartData.datasets.push(newData)
+        }
       }
       console.log(chartData.datasets);
       let myChart = new Chart(ctx, {
