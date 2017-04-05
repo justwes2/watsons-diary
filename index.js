@@ -30,14 +30,9 @@ app.get("/text", (req, res) => {
   const parameters = {
     'text': req.query.text,
     'features': {
-      'entities': {
-        'emotion': true,
-        'sentiment': true,
-        'limit': 1
-      },
       'keywords': {
         'emotion': true,
-        'sentiment': true,
+        'sentiment': false,
         'limit': 5
       }
     }
