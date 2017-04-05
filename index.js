@@ -47,6 +47,4 @@ app.get("/text", (req, res) => {
 })
 
 
-app.listen(4000, () => {
-  console.log("Port 4000 open");
-});
+app..listen(process.env.PORT || 4000)
