@@ -859,7 +859,7 @@ and another
 }
 
 
-color for 
+color for
 #paper {
   background-color: rgb(255, 255, 246);
 }
@@ -875,3 +875,61 @@ color for
 #tan {
   background-color: rgb(215, 180, 131);
 }
+
+error: angular.js:13642 TypeError: Cannot read property 'sadness' of undefined
+    at makeTable (app.js:60)
+    at vm.sampleText.WatsonFactory.get (app.js:24)
+scrubbing server log
+data = {
+   "keywords": [
+     {
+       "text": "international politics",
+       "relevance": 0.936012,
+       "emotion": {
+         "sadness": 0.545985,
+         "joy": 0.007771,
+         "fear": 0.017504,
+         "disgust": 0.056988,
+         "anger": 0.497711
+       }
+     },
+     {
+       "text": "rhetorical adduction",
+       "relevance": 0.76774,
+       "emotion": {
+         "sadness": 0.752563,
+         "joy": 0.014671,
+         "fear": 0.068641,
+         "disgust": 0.101006,
+         "anger": 0.146137
+       }
+     },
+     {
+       "text": "President Donald Trump",
+       "relevance": 0.702376
+     },
+     {
+       "text": "arguments",
+       "relevance": 0.692191,
+       "emotion": {
+         "sadness": 0.668737,
+         "joy": 0.071698,
+         "fear": 0.054728,
+         "disgust": 0.079823,
+         "anger": 0.558122
+       }
+     },
+     {
+       "text": "social media accounts",
+       "relevance": 0.68087,
+       "emotion": {
+         "sadness": 0.621902,
+         "joy": 0.004978,
+         "fear": 0.064439,
+         "disgust": 0.103693,
+         "anger": 0.347274
+       }
+     }
+   ],
+   "language": "en"
+ }

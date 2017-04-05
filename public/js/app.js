@@ -52,13 +52,15 @@ function IndexControllerFunction(WatsonFactory){
 }
 
 function makeTable(data) {
-    let table = $('#emotionResults')
-    table.append("<tr>"+"<th>"+"Text"+"</th>"+
-    "<th>"+"Sadness"+"</th>"+"<th>"+"Joy"+"</th>"+"<th>"+"Fear"+"</th>"+"<th>"+"Disgust"+"</th>"+"<th>"+"Anger"+"</th>"+"</tr>")
-    for(let i=0; i<data.keywords.length; i++){
-      table.append("<tr>"+"<td>"+data.keywords[i].text+"</td>"+
-      "<td>"+data.keywords[i].emotion.sadness+"</td>"+"<td>"+data.keywords[i].emotion.joy+"</td>"+"<td>"+data.keywords[i].emotion.fear+"</td>"+"<td>"+data.keywords[i].emotion.disgust+"</td>"+"<td>"+data.keywords[i].emotion.anger+"</td>"+"</tr>")
-    }
+   let table = $('#emotionResults')
+   table.append("<tr>"+"<th>"+"Text"+"</th>"+
+   "<th>"+"Sadness"+"</th>"+"<th>"+"Joy"+"</th>"+"<th>"+"Fear"+"</th>"+"<th>"+"Disgust"+"</th>"+"<th>"+"Anger"+"</th>"+"</tr>")
+   for(let i=0; i<data.keywords.length; i++){
+     if (data.keywords[i].emotion) {
+       table.append("<tr>"+"<td>"+data.keywords[i].text+"</td>"+
+       "<td>"+data.keywords[i].emotion.sadness+"</td>"+"<td>"+data.keywords[i].emotion.joy+"</td>"+"<td>"+data.keywords[i].emotion.fear+"</td>"+"<td>"+data.keywords[i].emotion.disgust+"</td>"+"<td>"+data.keywords[i].emotion.anger+"</td>"+"</tr>")
+     }
+   }
 }
 
 const backgroundColor = [
