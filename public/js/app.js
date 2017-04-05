@@ -23,7 +23,7 @@ function IndexControllerFunction(WatsonFactory){
       console.log(response);
       makeTable(response)
       for (let i=0; i<metrics.keywords.length; i++){
-        if (data.keywords[i].emotion) {
+        if (metrics.keywords[i].emotion) {
           let newData = {}
           newData.label=metrics.keywords[i].text
           newData.data=[metrics.keywords[i].emotion.sadness, metrics.keywords[i].emotion.joy, metrics.keywords[i].emotion.fear, metrics.keywords[i].emotion.disgust, metrics.keywords[i].emotion.anger]
