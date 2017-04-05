@@ -18,9 +18,7 @@ function FactoryFunction($resource) {
 function IndexControllerFunction(WatsonFactory){
   let vm = this
   vm.sendToWatson = function(){
-    // console.log(vm.sampleText);
     vm.sampleText = WatsonFactory.get({text: vm.sampleText}, (response) => {
-      console.log(response)
       metrics = response
       makeTable(response)
       for (let i=0; i<metrics.keywords.length; i++){

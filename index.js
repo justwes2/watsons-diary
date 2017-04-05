@@ -1,6 +1,7 @@
 
 const express = require("express");
 const parser = require('body-parser');
+
 //api key extractor
 const dotenv = require('dotenv').config()
 
@@ -14,9 +15,6 @@ const natural_language_understanding = new NaturalLanguageUnderstandingV1({
   'version_date': '2017-02-27'
 });
 
-//chart.js
-// const chart = require('chart.js')
-
 const app = express();
 
 
@@ -28,22 +26,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + '/index.html')
 });
 
-
-// app.get("/text", (req, res) => {
-//   console.log(req.query);
-//   const parameters = {
-//     'text': req.query.text,
-//     'features': {
-//       'emotion': {
-//         'targets': [
-//           'feminism',
-//           'Black Lives Matter'
-//         ]
-//       }
-//     }
-//   }
 app.get("/text", (req, res) => {
-  // console.log(req.query);
   const parameters = {
     'text': req.query.text,
     'features': {
@@ -64,10 +47,7 @@ app.get("/text", (req, res) => {
     if (err)
       console.log('error:', err);
     else
-      // var metrics = JSON.stringify(response, null, 2)
-      //couldn't do let or const
       res.json(response);
-      console.log(response);
   });
 })
 
