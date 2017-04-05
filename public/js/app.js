@@ -20,6 +20,7 @@ function IndexControllerFunction(WatsonFactory){
   vm.sendToWatson = function(){
     vm.sampleText = WatsonFactory.get({text: vm.sampleText}, (response) => {
       metrics = response
+      console.log(response);
       makeTable(response)
       for (let i=0; i<metrics.keywords.length; i++){
         let newData = {}
@@ -30,6 +31,7 @@ function IndexControllerFunction(WatsonFactory){
         newData.borderWidth=1
         chartData.datasets.push(newData)
       }
+      console.log(chartData.datasets);
       let myChart = new Chart(ctx, {
         type: 'radar',
         data: chartData,
