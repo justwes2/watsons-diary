@@ -12,7 +12,7 @@ angular
   ])
 
 function FactoryFunction($resource) {
-  return $resource("http://localhost:4000/text", {}, {})
+  return $resource("https://watsons-diary.herokuapp.com/text", {}, {})
 }
 
 function IndexControllerFunction(WatsonFactory){
