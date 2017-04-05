@@ -42,7 +42,8 @@ app.get("/text", (req, res) => {
     if (err)
       console.log('error:', err);
     else
-      console.log(response);
+      var metrics = JSON.stringify(response, null, 2)
+      console.log(metrics);
       res.json(response);
   });
 })
